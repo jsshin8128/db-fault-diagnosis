@@ -1,10 +1,10 @@
-package com.example.demo;
+package io.github.jsshin8128.order;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class OrderServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

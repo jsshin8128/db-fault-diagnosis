@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: diagnosis-service
+  datasource:
+    url: jdbc:mysql://localhost:3306
+    username: diagnosis
+    password: diagnosis
+
+diagnosis:
+  target-base-url: http://localhost:8080
+  model: claude-opus-5-5
+  effort: medium
+  max-tokens: 16000
+  progressive:
+    alpha: 0.1
+    beta: 0.1
+    confidence-threshold: 0.8
+    costs:
+      "[api_analysis]":
+        tokens: 2917
+        latency-ms: 6690
+      "[connection_analysis]":
+        tokens: 3070
+        latency-ms: 5410
+      "[query_analysis]":
+        tokens: 5345
+        latency-ms: 8488
+      "[plan_analysis]":
+        tokens: 5359
+        latency-ms: 6992
+      "[lock_analysis]":
+        tokens: 5167
+        latency-ms: 7327
