@@ -1,13 +1,13 @@
-package com.example.demo;
+package io.github.jsshin8128.diagnosis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class DiagnosisServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DiagnosisServiceApplication.class, args);
 	}
 
 }
